@@ -1,0 +1,43 @@
+[
+  {
+    "model": "portfolio_app.experience",
+    "pk": 1,
+    "fields": {
+      "title": "Stagiaire Backend",
+      "company": "MAGIS BI",
+      "location": "Bujumbura",
+      "start_date": "2024-01-01",
+      "end_date": "2025-01-01",
+      "description": "Création et modification d’API.\nMise à jour des bases de données.\nTravail en équipe agile."
+    }
+  },
+  {
+    "model": "portfolio_app.experience",
+    "pk": 2,
+    "fields": {
+      "title": "Informaticien",
+      "company": "OPS ETS Horizon",
+      "location": "Goma",
+      "start_date": "2017-01-01",
+      "end_date": "2021-12-31",
+      "description": "Maintenance informatique.\nSuivi du matériel électronique.\nAssistance bureautique."
+    }
+  },
+  {
+    "model": "portfolio_app.project",
+    "pk": 1,
+    "fields": {
+      "title": "Système de gestion de stock",
+      "description": "Application web en PHP/MySQL.",
+      "link": ""
+    }
+  },
+  {
+    "model": "portfolio_app.skill",
+    "pk": 1,
+    "fields": {
+      "category": "Langages",
+      "name": "Python"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+/*
+Custom CSS for non-Tailwind styles.
+Tailwind is included via CDN, so most styles are handled via utility classes.
+*/
+
+/* --- Fix scroll offset for anchor links when using a fixed navbar --- */
+html {
+    scroll-padding-top: 4rem; /* Match with navbar height */
+}
+
+/* --- Experience Timeline Line --- */
+/* Use pseudo-element to draw a vertical line beside job items */
+.job-item::after {
+    content: '';
+    position: absolute;
+    width: 0.25rem; /* Tailwind: w-1 */
+    background-color: #22c55e; /* Tailwind: bg-green-500 */
+    top: 0;
+    bottom: 0;
+    left: 0.5rem; /* Tailwind: left-2 */
+}
+
+@media (min-width: 768px) {
+    .job-item::after {
+        left: 1.5rem; /* Tailwind: md:left-6 */
+    }
+}
+
+/* --- Experience Timeline Circle --- */
+.job-item .timeline-circle {
+    position: absolute;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .job-item .timeline-circle {
+        left: 1rem; /* Tailwind: md:left-4 */
+    }
+}
